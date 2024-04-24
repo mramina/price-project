@@ -1,0 +1,107 @@
+body {
+    background-color: rgb(141, 208, 204);
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    background-color: #f093fb; 
+    animation: changeColor 5s forwards; 
+}
+
+@keyframes changeColor {
+  0% { background-color: #f093fb; } 
+  100% { background-color: #000000; } 
+}
+
+.block {
+    border-radius: 10px;
+    background-color: rgb(51, 72, 92);
+    padding: 20px;
+    margin: 7em;
+    margin-left: 15em;
+    width: 350px;
+    height: 400px;
+}
+
+.block2{
+    border-radius: 10px;
+    background-color: rgb(138, 103, 124);
+    padding: 20px;
+    margin: 7em;
+    margin-left: 1em;
+    width: 350px;
+    height: 400px;
+}
+
+.block .block2 {
+    justify-content: space-between;
+}
+
+.text {
+    bottom: 400px;
+    left: 50px;
+
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+}
+
+.price {
+    bottom: 450px;
+    right: 25px;
+    text-align: right;
+    font-size: 50px;
+    font-weight: 500;
+    color: rgb(121, 41, 31);
+    opacity: 0;
+    animation: fadeIn 11s ease forwards;
+}
+
+.price :nth-child(1) {
+    font-size: 20px;
+    font-weight: 500;
+    color: rgba(128, 128, 128, 1);
+    text-decoration: line-through;
+    text-align: right;
+    top: 70px;
+}
+
+.price :nth-child(2) {
+    font-size: 50px;
+    font-weight: 500;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.bag {
+    position: absolute;
+    width: 40px;
+    padding: 15px;
+    border-radius: 10px;
+    top: 505px;
+    left: 235px;
+    background-color: #f093fb; 
+    animation: changeColor 5s forwards;
+}
+
+.bag2 {
+    position: absolute;
+    width: 40px;
+    padding: 15px;
+    border-radius: 10px;
+    top: 505px;
+    left: 755px;
+    background-color: #f093fb; 
+    animation: changeColor 5s forwards;
+}
+
+.sale {
+    position: absolute;
+    top: 100px;
+    left: 735px;
+}
+
